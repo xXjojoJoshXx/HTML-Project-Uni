@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktpage</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    p {
+      margin: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kontaktpage</h1>
+
+  <form method="post">
+    <p><label for="name">Name:</label><br>
+      <input type="text" name="name" placeholder="Ihr Name">
+    </p>
+    <p><label for="eMail">E-Mail:</label><br>
+      <input type="text" name="eMail" placeholder="Ihre E-Mail">
+    </p>
+    <p>
+      <label for="message">Ihre Nachricht:</label><br>
+      <textarea name="message" cols="50" rows="15" maxlength="10000" wrap="soft"></textarea>
+    </p>
+    <p><input type="submit" value="senden"></p>
+  </form>
+  <p style="margin-top: 30px;"><a href="index.html">zurück</a></p>
+</body>
+</html>
